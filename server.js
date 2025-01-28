@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 
 const app = express();
+
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/contact', (req, res) => {
@@ -18,6 +19,8 @@ app.post('/contact', (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-    console.log('Server running on http://localhost:3000');
+// Use the PORT environment variable or default to port 3000
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
 });
