@@ -15,6 +15,7 @@ app.post('/contact', (req, res) => {
             console.error(err);
             return res.status(500).send('Error saving message');
         }
+        console.log('Message saved:', data);
         res.send('Message saved successfully!');
     });
 });
