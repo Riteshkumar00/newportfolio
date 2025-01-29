@@ -10,7 +10,7 @@ app.post('/contact', (req, res) => {
     const { name, email, subject, message } = req.body;
     const data = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}\n\n`;
 
-    fs.appendFile('/tmp/messages.txt', data, (err) => {
+    fs.appendFile('./assets/messages.txt', data, (err) => {
         if (err) {
             console.error(err);
             return res.status(500).send('Error saving message');
