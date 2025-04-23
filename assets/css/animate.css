@@ -10,6 +10,26 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
+.capital-hi {
+  font-size: 32px; /* You can adjust the size as per your design */
+  font-weight: bold;
+  text-transform: capitalize; /* Ensures it appears as "Hi" */
+}
+
+.profile-txt img.profile-logo {
+  width: 40px;         /* Small size */
+  height: 40px;
+  border-radius: 50%;  /* Makes it round */
+  object-fit: cover;   /* Ensures the image stays inside the circle */
+  margin-bottom: 10px; /* Space below the logo */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Optional: soft shadow */
+  transition: transform 0.3s ease;
+}
+
+.single-profile:hover .profile-txt img.profile-logo {
+  transform: scale(1.1);
+}
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
