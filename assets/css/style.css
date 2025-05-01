@@ -280,7 +280,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     content: " ";
     top: 0;
     left:  0;
-    width: 71%;
+    width: 69%;
     height:  100%;
     background: rgba(31,44,108,.3);
 }
@@ -295,7 +295,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 69%;
+    width: 72%;
     height: 60px;
     background: #1f2c6c;
 }
